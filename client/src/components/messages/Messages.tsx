@@ -29,7 +29,6 @@ const Messages = (): ReactElement => {
     axios
       .get('/api/conversations')
       .then((conversations) => {
-        console.log('conversations loaded');
         setAllConversations(conversations.data);
       })
       .catch((err) => {
